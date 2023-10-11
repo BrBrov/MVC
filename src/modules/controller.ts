@@ -14,13 +14,13 @@ class Controller {
   public startApp(): void {
     const btn = document.querySelector('.switcher') as HTMLButtonElement;
     
-    this.model.switchState(); // init start view 
+    this.model.update(); // init start view 
 
-    btn.addEventListener('click', this.listenEvent.bind(this));
+    btn.addEventListener('click', this.manipulates.bind(this));
   }
 
-  private listenEvent(): void {
-    this.model.switchState();
+  private manipulates(): void {
+    this.model.update();
   }
 
 }

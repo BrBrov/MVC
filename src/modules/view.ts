@@ -11,7 +11,7 @@ class View {
     this.btnText = document.querySelector('.switcher__text') as HTMLSpanElement;
   }
 
-  public switch(state: string): void {
+  public sees(state: string): void {
     this.light.className = 'light ' + state;    
     this.btnText.textContent = this.btnText.textContent === 'Turn on' ? 'Turn off' : 'Turn on';
   }
