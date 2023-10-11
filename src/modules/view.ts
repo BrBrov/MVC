@@ -1,3 +1,7 @@
+/**
+ * @class View
+ * @classdesc Receives state from the Model class and displays it on the page
+*/
 class View {
   private light: HTMLDivElement;
   private btnText: HTMLSpanElement;

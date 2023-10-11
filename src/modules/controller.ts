@@ -1,5 +1,8 @@
 import Model from "./model";
-
+/**
+ * @class Controller
+ * @classdesc Handles events on the page and modifies the Model class
+*/
 class Controller {
   
   private model: Model;

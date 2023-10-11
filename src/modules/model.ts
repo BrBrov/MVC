@@ -1,5 +1,9 @@
 import View from "./view";
 
+/**
+ * @class Model
+ * @classdesc Processes its state using the switchState() method and causes changes in the View class
+*/
 class Model {
   private view: View;
 
