@@ -1,15 +1,18 @@
+import View from "./view";
+
 class Model {
-  private state: boolean = false;
+  private view: View;
 
-  private on: string = 'light__on';
+  private state: string = 'light__on';
 
-  private off: string = 'light__off';
+  constructor(view: View) {
+    this.view = view;
+  }
 
-  public switchState(): string {
-    this.state = !this.state;
-    if (this.state) return this.on;
+  public switchState(): void {
+    this.state = this.state === 'light__on' ? 'light__off' : 'light__on';
 
-    return this.off;
+    this.view.switch(this.state);
   }
 }
 

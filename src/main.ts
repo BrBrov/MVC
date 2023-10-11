@@ -4,11 +4,10 @@ import View from './modules/view';
 import './style.scss';
 
 function start(): void {
-  const model = new Model();
   const view = new View();
-  const controller = new Controller(model, view);
+  const model = new Model(view);
+  const controller = new Controller(model);
   controller.startApp();
 }
 
-// window.addEventListener('load', start);
 start();
