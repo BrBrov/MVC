@@ -9,7 +9,7 @@ class View {
 
   public switch(state: string): void {
     this.light.className = 'light ' + state;    
-    this.btnText.textContent = this.btnText.textContent === 'Light on' ? 'Light off' : 'Light on';
+    this.btnText.textContent = this.btnText.textContent === 'Turn on' ? 'Turn off' : 'Turn on';
   }
 }
 
